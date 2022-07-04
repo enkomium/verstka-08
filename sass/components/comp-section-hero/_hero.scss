@@ -1,0 +1,82 @@
+.hero {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    position: relative;
+
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/global/12.jpg");
+    /* background-image: url("../images/global/Img-optim.jpg"); */
+    background-color: $title-text-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__title {
+    color: $white-color;
+    padding-top: 200px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+
+    position: relative;
+    z-index: 2;
+
+    text-shadow: $text-shadow;
+}
+
+.hero__button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
+    color: $primary-text-color;
+    background-color: $white-color;
+    border: 1px solid #2196f3;
+    font-family: inherit;
+    cursor: pointer;
+
+    &--pulsate-style {
+        background-color: $accent-color;
+        color: $white-color;
+        border-radius: 20px;
+    
+        animation: pulsate-bck 0.5s ease-in-out infinite;
+        }
+
+            &--pulsate-style:hover {
+                animation-play-state: paused;
+                }
+}
+
+.hero__svinka {
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
+
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+
+    background-image: url(../images/global/pig-pig.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    animation: svinina 15000ms linear 100ms infinite alternate none running,
+               svin 10s linear 0s infinite;
+}

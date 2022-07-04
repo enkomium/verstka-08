@@ -1,0 +1,236 @@
+.form {
+    width: 528px;
+    height: 600px;
+    @extend %marginLR-auto;
+    padding: 20px 40px 20px 40px;
+
+    background-color: $white-color;
+    outline: 1px solid #EEEEEE;
+
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.form__title {
+    margin-top: 5px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em
+}
+
+.form__field {
+    position: relative;
+    display: flex;
+    width: 448px;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+
+    &--top-indent {
+            margin-top: 15px;
+        }
+
+    /* ----селекторы для анимации и т.д---- */
+    &:focus-within>.form__icon {
+            fill: $accent-color;
+    }
+
+    &:focus-within>.form__label {
+            color: $accent-color;
+            transform: translate(-37px, -37px);
+    }
+                
+    &:not(:placeholder-shown)+.form__label {
+            transform: translate(-37px, -37px);
+    }
+}
+
+.form__input {
+    width: 448px;
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+    padding-left: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form__label {
+    margin-bottom: 5px;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+
+    transition: transform 250ms linear;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: $title-text-color;
+}
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+.form__comment {
+    text-align: left;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: $title-text-color
+}
+
+.form__textarea {
+    /* (запрещает растягивать текст) */
+    resize: none;
+
+    padding: 10px;
+    font-size: 15px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px
+}
+
+.form__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    /* (когда нажмем на чекбокс, он поменяет цвет.) */
+    /* (Селектор выберает соседний класс, которые идет после него.) */
+    /* (можно вместо + вписать ~ и выберать любой класс который является его соседом по вложенности) */
+    &:checked+.form__checkbox-icon {
+            background-color: $accent-color;
+            background-image: url(../images/form/galochka.svg);
+            background-size: contain;
+    
+            /* (ЧТо бы ФОн распростронялся еще и на BORDER пишем:) */
+            /* (Иконка заезжает на БОРДЕР) */
+            background-origin: border-box;
+            /* (Иии делаем обводку таким же цветом как БэкГраунд)*/
+            border-color: $accent-color;
+    
+            transform: scale(1.2);
+        }
+
+    /* (Анимация чекбокса) */
+    &:checked~.form__checkbox-text {
+            animation: shake-vertical 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    }
+}
+
+.form__checkbox-label {
+    display: flex;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* что бы не растягивать на всю ШИРИНУ экрана!!!! */
+}
+
+.form__checkbox-icon {
+    display: flex;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: transform 250ms linear;
+}
+
+.form__checkbox-text {
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+    color: $title-text-color
+}
+
+.form__checkbox-link {
+    color: $accent-color;
+}
+
+/* ----кнопка отправки формы---- */
+.form__button {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    color: $white-color;
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    font-family: inherit;
+
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            background-color: #096bcd;
+        }
+}
+
+/* ----кнопка закрытия формы/модалки---- */
+.form__button-close {
+    position: absolute;
+    top: -2%;
+    right: -3%;
+    width: 30px;
+    height: 30px;
+
+    color: black;
+    background-color: $white-color;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: $accent-color;
+        }
+
+                &:hover .form__button-icon {
+                    fill: #FFF;
+                }
+}
+
+.form__button-icon {
+    position: absolute;
+    top: 51%;
+    left: 5px;
+
+    transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-50%);
+
+    
+}

@@ -1,0 +1,854 @@
+@charset "UTF-8";
+/**
+ * Minified by jsDelivr using clean-css v4.2.3.
+ * Original file: /npm/modern-normalize@1.1.0/modern-normalize.css
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+/*# sourceMappingURL=/sm/b8ae781793ee4eb86edef3f2a2ac43a5575d063ed8cd287d7553f9f1b2776616.map */
+body {
+  background-color: #ffffff;
+  color: #212121;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  padding-top: 80px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.site-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ///////////////////////////////////////-----------КНОПКА ГЕРОЯ-1----------//////////////////////////////////////////////// */
+@-webkit-keyframes shake-vertical {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    transform: translateY(0);
+  }
+  10%, 30%, 50%, 70% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  20%, 40%, 60% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+            transform: translateY(6.4px);
+    transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+            transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
+  }
+}
+@keyframes shake-vertical {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    transform: translateY(0);
+  }
+  10%, 30%, 50%, 70% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  20%, 40%, 60% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+            transform: translateY(6.4px);
+    transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+            transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
+  }
+}
+@keyframes shake-vertical {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    transform: translateY(0);
+  }
+  10%, 30%, 50%, 70% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  20%, 40%, 60% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+            transform: translateY(6.4px);
+    transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+            transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
+  }
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////-----------КНОПКА ГЕРОЯ-2----------//////////////////////////////////////////////// */
+.pulsate-bck {
+  -webkit-animation: pulsate-bck 0.5s ease-in-out infinite;
+          animation: pulsate-bck 0.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////---------------СВИНКА---------------//////////////////////////////////////////////// */
+@-webkit-keyframes svinina {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 850px;
+  }
+}
+@keyframes svinina {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 850px;
+  }
+}
+@-webkit-keyframes svin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes svin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.header {
+  position: fixed;
+  width: 100%;
+  min-height: 80px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e3e1e1;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  color: #212121;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.logo__accent {
+  color: #2196f3;
+}
+
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding-left: 90px;
+  padding-right: 300px;
+}
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #2196f3;
+}
+
+.site-nav__link {
+  position: relative;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #212121;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav__link--current {
+  color: #2196f3;
+}
+.site-nav__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  background-color: #2196f3;
+  border-radius: 2px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav__link:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.site-nav__indent {
+  position: relative;
+  margin-left: 50px;
+}
+.site-nav__indent:first-child {
+  margin-left: 0;
+}
+
+.site-nav__active {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+  fill: #757575;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__link--separation {
+  margin-left: 30px;
+}
+.contacts__link:hover, .contacts__link:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.contacts__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/global/12.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/global/12.jpg");
+  /* background-image: url("../images/global/Img-optim.jpg"); */
+  background-color: #757575;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__title {
+  color: #ffffff;
+  padding-top: 200px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 -1px 1px #000000, 0 -1px 1px #000000, 0 1px 1px #000000, 0 1px 1px #000000, -1px 0 1px #000000, 1px 0 1px #000000, -1px 0 1px #000000, 1px 0 1px #000000, -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000, -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000;
+}
+
+.hero__button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+  color: #212121;
+  background-color: #ffffff;
+  border: 1px solid #2196f3;
+  font-family: inherit;
+  cursor: pointer;
+}
+.hero__button--pulsate-style {
+  background-color: #2196f3;
+  color: #ffffff;
+  border-radius: 20px;
+  -webkit-animation: pulsate-bck 0.5s ease-in-out infinite;
+          animation: pulsate-bck 0.5s ease-in-out infinite;
+}
+.hero__button--pulsate-style:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.hero__svinka {
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  margin-left: 50px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+  background-image: url(../images/global/pig-pig.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation: svinina 15000ms linear 100ms infinite alternate none running, svin 10s linear 0s infinite;
+          animation: svinina 15000ms linear 100ms infinite alternate none running, svin 10s linear 0s infinite;
+}
+
+.modal {
+  /* можно спозиционировать в backdrop с помощью flex, но лучше так */
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  min-width: 528px;
+  min-height: 581px;
+  background-color: rgb(131, 131, 131);
+  /* Если в 2х scale(1); поменять значения наоборот, то модалка будет появляться ОТ НАС! */
+  /* Значения transition: можно писать через Запятую! */
+  /* типа -- transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ----ТЕМНЫЙ ФОН---- */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(35, 35, 35, 0.5);
+  opacity: 1;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* КОГДА СПРЯТАН backdrop МОДАЛКА тоже СПРЯТАНА и МЫ ЧТО_ТО ПРЕМИНЯЕМ К МОДАЛКЕ!!! */
+/* То как она будет показываться и прятаться работае совмстно с transform у .modal */
+.backdrop.backdrop--is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+          transform: translate(-50%, -50%) scale(0.9);
+}
+
+/* СКРЫТИЕ МОДАЛКИ И ВОЗМОЖНОСТЬ НАЖИМАТЬ КНОПКИ И Т.П!!! */
+.backdrop.backdrop--is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form {
+  width: 528px;
+  height: 600px;
+  padding: 20px 40px 20px 40px;
+  background-color: #ffffff;
+  outline: 1px solid #EEEEEE;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.form__title {
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.form__field {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 448px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  /* ----селекторы для анимации и т.д---- */
+}
+.form__field--top-indent {
+  margin-top: 15px;
+}
+.form__field:focus-within > .form__icon {
+  fill: #2196f3;
+}
+.form__field:focus-within > .form__label {
+  color: #2196f3;
+  -webkit-transform: translate(-37px, -37px);
+          transform: translate(-37px, -37px);
+}
+.form__field:not(:-moz-placeholder-shown) + .form__label {
+  transform: translate(-37px, -37px);
+}
+.form__field:not(:-ms-input-placeholder) + .form__label {
+  transform: translate(-37px, -37px);
+}
+.form__field:not(:placeholder-shown) + .form__label {
+  -webkit-transform: translate(-37px, -37px);
+          transform: translate(-37px, -37px);
+}
+
+.form__input {
+  width: 448px;
+  height: 40px;
+  margin: 0;
+  padding: 5px;
+  padding-left: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form__label {
+  margin-bottom: 5px;
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.form__comment {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form__textarea {
+  /* (запрещает растягивать текст) */
+  resize: none;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  /* (когда нажмем на чекбокс, он поменяет цвет.) */
+  /* (Селектор выберает соседний класс, которые идет после него.) */
+  /* (можно вместо + вписать ~ и выберать любой класс который является его соседом по вложенности) */
+  /* (Анимация чекбокса) */
+}
+.form__checkbox:checked + .form__checkbox-icon {
+  background-color: #2196f3;
+  background-image: url(../images/form/galochka.svg);
+  background-size: contain;
+  /* (ЧТо бы ФОн распростронялся еще и на BORDER пишем:) */
+  /* (Иконка заезжает на БОРДЕР) */
+  background-origin: border-box;
+  /* (Иии делаем обводку таким же цветом как БэкГраунд)*/
+  border-color: #2196f3;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.form__checkbox:checked ~ .form__checkbox-text {
+  -webkit-animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: shake-vertical 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+.form__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* что бы не растягивать на всю ШИРИНУ экрана!!!! */
+}
+
+.form__checkbox-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+
+.form__checkbox-text {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.form__checkbox-link {
+  color: #2196f3;
+}
+
+/* ----кнопка отправки формы---- */
+.form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  color: #ffffff;
+  background-color: #2196f3;
+  border: 1px solid #2196f3;
+  font-family: inherit;
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__button:hover {
+  background-color: #096bcd;
+}
+
+/* ----кнопка закрытия формы/модалки---- */
+.form__button-close {
+  position: absolute;
+  top: -2%;
+  right: -3%;
+  width: 30px;
+  height: 30px;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__button-close:hover, .form__button-close:focus {
+  background-color: #2196f3;
+}
+.form__button-close:hover .form__button-icon {
+  fill: #FFF;
+}
+
+.form__button-icon {
+  position: absolute;
+  top: 51%;
+  left: 5px;
+  -webkit-transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}/*# sourceMappingURL=main.css.map */
