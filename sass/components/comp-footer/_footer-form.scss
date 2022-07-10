@@ -1,0 +1,32 @@
+.footer-form {
+    display: flex;
+    padding-top: 12px;
+}
+
+.footer-form-field {
+    display: flex;
+    flex-direction: column;
+    padding-left: 85px;
+}
+
+.footer-form-field__label {
+    margin-bottom: 20px;
+    
+    color: $white-color;
+    
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase
+}
+
+.footer-form-field__imput {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    
+    color: $white-color;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}

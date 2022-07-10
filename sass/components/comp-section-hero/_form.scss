@@ -9,8 +9,8 @@
 
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .form__title {
@@ -179,8 +179,7 @@
 .form__button {
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    @extend %marginLR-auto;
     margin-top: 15px;
     border-radius: 4px;
     padding: 10px 32px;
@@ -219,9 +218,9 @@
             background-color: $accent-color;
         }
 
-                &:hover .form__button-icon {
-                    fill: #FFF;
-                }
+    &:hover .form__button-icon {
+            fill: $white-color;
+    }
 }
 
 .form__button-icon {
@@ -231,6 +230,4 @@
 
     transition: fill 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(-50%);
-
-    
 }

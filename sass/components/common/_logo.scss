@@ -10,5 +10,10 @@
     &__accent {
             color: $accent-color;
         }
+
+    &--white {
+        color: $white-color;
+        font-style: normal;
+    }
 }
 

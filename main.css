@@ -878,7 +878,7 @@ img {
 }
 
 .addres {
-    display: inline-block0;
+    display: inline-block;
 }
 
 .addres__text {
@@ -911,7 +911,7 @@ img {
 
 .contacts__styte-text {
     padding-right: 5px;
-    color: #757575;;
+    color: #757575;
 }
 
 .footer-social {
